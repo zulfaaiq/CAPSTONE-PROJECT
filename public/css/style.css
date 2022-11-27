@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Navigation */
+  
+  .nav-container {
+    background: #d70000;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5);
+    height: 72px;
+    margin-top: 0px;
+    z-index: 500;
+    position: relative;
+  }
+  
+  .wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav .logo {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    color: white;
+  }
+  
+  .nav-items li {
+    list-style: none;
+    margin-right: 60px;
+  }
+  
+  .nav-items li:nth-last-of-type(1) {
+    margin: 0;
+  }
+  
+  .nav-items li a {
+    color: white;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+  }
+  
+  /* Header */
+  
+  .header-container {
+    background: #ffffff;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header h1 {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    color: #021718;
+    margin-bottom: 24px;
+  }
+  
+  header p {
+    font-size: 16px;
+    line-height: 42px;
+    color: #021718;
+    width: 418px;
+  
+    margin-bottom: 48px;
+  }
+  
+  header a {
+    color: #fffffa;
+    font-size: 24px;
+    text-decoration: none;
+  
+    background: #d70000;
+    border-radius: 8px;
+    padding: 12px 48px;
+    display: inline-block;
+    transition: 300ms;
+  }
+  
+  header a:hover {
+    transform: translateY(-8px);
+  }
+  
+  /* Social Icons */
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icons a {
+    margin: 0 24px;
+  }
+  
+  .social-icons a:nth-of-type(1) {
+    margin-left: 0;
+  }
+  
+  /* Hero image */
+  
+  header .hero-image {
+    position: relative;
+  }
+  
+  header .hero-image img {
+    transition: 300ms;
+    position: relative;
+    z-index: 100;
+  }
+  
+  header .hero-image img:hover {
+    transform: rotate(-6deg);
+  }
+  
+  header .hero-image .photo-bg {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 45px;
+    top: 24px;
+    transform: rotate(-6deg);
+  }
+  
