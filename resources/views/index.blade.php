@@ -29,6 +29,10 @@
               <a href="#">About</a>
             </li>
 
+            <li>
+              <a href="/team">Team</a>
+            </li>
+
           </ul>
         </nav>
       </div>
