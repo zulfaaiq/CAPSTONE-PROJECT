@@ -32,6 +32,7 @@
   
   nav ul {
     display: flex;
+    margin: 0;
   }
   
   nav .logo {
@@ -149,3 +150,102 @@
     transform: rotate(-6deg);
   }
   
+  /* Team */
+
+.team {
+  background-color: white;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin: 20px 0 40px 0;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background: #d70000;
+    transform: translateX(-50%);
+}
+
+.btn-sosmed {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-sosmed:hover .icon-sosmed{
+    animation: rotation 0.5s 1 linear;
+}
+
+.card-team__img {
+    width: 31%;
+    height: 31%;
+    position: relative;
+    top: -60px;
+    outline: 2px solid gray;
+}
+
+.card-team{
+    margin-top: 60px;
+    border-width: 2px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5);
+    background-color: rgba(240, 157, 171, 0.1);
+}
+
+.card-team__content::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 70px;
+    height: 1px;
+    background: #000;
+    transform: translateX(-50%);
+}
+
+.card-team__content {
+    position: relative;
+    top: -30px;
+}
+
+.sosmed-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5px;
+    top: -25px;
+    position: relative;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #cac8c8;
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+    top: 50%;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
