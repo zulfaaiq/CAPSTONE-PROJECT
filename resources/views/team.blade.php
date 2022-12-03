@@ -72,7 +72,7 @@
             </div>
             <div class="carousel-item">
               <div class="card d-flex align-items-center pb-2 card-team rounded-4 mx-1">
-                <img src="./image/profile.jpg" class="rounded-circle card-team__img" alt="profile image">
+                <img src="./image/profile_alan.jpeg" class="rounded-circle card-team__img" alt="profile image">
                 <div class="card-body card-team__content text-center">
                   <h5 class="card-title">
                     M Alan Nur Ilkhan
@@ -163,7 +163,7 @@
           </div>
           <div class="col-12 col-sm-5 col-md-5 col-lg-3">
             <div class="card d-flex align-items-center pb-2 card-team rounded-4">
-              <img src="./image/profile.jpg" class="rounded-circle card-team__img" alt="profile image">
+              <img src="./image/profile_alan.jpeg" class="rounded-circle card-team__img" alt="profile image">
               <div class="card-body card-team__content text-center">
                 <h5 class="card-title">
                   M Alan Nur Ilkhan
