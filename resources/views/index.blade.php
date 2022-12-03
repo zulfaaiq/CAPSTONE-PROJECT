@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Welcome</title>
+    <title>Get-Blood</title>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
@@ -18,7 +18,7 @@
 
           <ul class="nav-items">
             <li>
-              <a href="#">Login</a>
+              <a href="/login">Login</a>
             </li>
 
             <li>
@@ -46,7 +46,7 @@
             <p>
               Kami menyediakan informasi tentang ketersediaan darah pada suatu rumah sakit untuk pasien atau masyarakat yang ingin mengetahui ketersediaan darah
             </p>
-            <a href="#">
+            <a href="/login">
               Login
             </a>
           </div>
