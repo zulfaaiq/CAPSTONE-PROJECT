@@ -22,7 +22,7 @@
             </li>
 
             <li>
-              <a href="#">Dashboard</a>
+              <a href="/dashboard">Dashboard</a>
             </li>
 
             <li>
