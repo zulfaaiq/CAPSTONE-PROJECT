@@ -28,4 +28,24 @@ class RSUDKabBrebesController extends Controller
 
         return redirect()->route('tampilrsud_kab_brebes');
     }
+
+    public function ubahrsud_kab_brebes($id)
+    {
+        $rsud_kab_brebes = RSUDKabBrebesModel::select('*')
+                    ->where('id', $id)
+                    ->get();
+
+        return view('ubahrsud_kab_brebes', ['rsud_kab_brebes' => $rsud_kab_brebes]);
+    }
+
+    public function updatersud_kab_brebes(Request $request)
+    {
+    $rsud_kab_brebes = RSUDKabBrebesModel::where('id', $request->id)
+                ->update([
+                        'gol_darah' => $request->gol_darah,
+                        'jumlah' => $request->jumlah,
+                ]);
+
+    return redirect()->route('tampilrsud_kab_brebes');
+    }
 }
