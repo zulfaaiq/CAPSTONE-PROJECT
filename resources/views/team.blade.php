@@ -65,7 +65,7 @@
                 <div class="sosmed-container mt-0 pt-0">
                   <a href="#" class="btn px-2 py-1 rounded-circle bg-primary btn-sosmed"><i class="fa-brands fa-linkedin-in text-white icon-sosmed"></i></a>
                   <a href="#" class="btn px-2 py-1 rounded-circle bg-dark btn-sosmed"><i class="fa-brands fa-github text-white icon-sosmed"></i></a>
-                  <a href="#" class="btn px-2 py-1 rounded-circle bg-danger btn-sosmed"><i class="fa-brands fa-instagram text-white icon-sosmed"></i></a>
+                  <a href="https://www.instagram.com/dennyivanrifai" class="btn px-2 py-1 rounded-circle bg-danger btn-sosmed"><i class="fa-brands fa-instagram text-white icon-sosmed"></i></a>
                   <a href="#" class="btn px-2 py-1 rounded-circle bg-dark btn-sosmed"><i class="fa-solid fa-envelope text-white icon-sosmed"></i></a>
                 </div>
               </div>
@@ -82,11 +82,11 @@
                   </div>
                 </div>
                 <div class="sosmed-container mt-0 pt-0">
-                  <a href="#" class="btn px-2 py-1 rounded-circle bg-primary btn-sosmed"><i class="fa-brands fa-linkedin-in text-white icon-sosmed"></i></a>
-                  <a href="#" class="btn px-2 py-1 rounded-circle bg-dark btn-sosmed"><i class="fa-brands fa-github text-white icon-sosmed"></i></a>
-                  <a href="#" class="btn px-2 py-1 rounded-circle bg-danger btn-sosmed"><i class="fa-brands fa-instagram text-white icon-sosmed"></i></a>
-                  <a href="#" class="btn px-2 py-1 rounded-circle bg-dark btn-sosmed"><i class="fa-solid fa-envelope text-white icon-sosmed"></i></a>
-                </div>
+                <a href="https://www.linkedin.com/in/m-alan-nur-ilkhan-7ba568252/" class="btn px-2 py-1 rounded-circle bg-primary btn-sosmed"><i class="fa-brands fa-linkedin-in text-white icon-sosmed"></i></a>
+                <a href="https://github.com/MAlanNurIlkhan" class="btn px-2 py-1 rounded-circle bg-dark btn-sosmed"><i class="fa-brands fa-github text-white icon-sosmed"></i></a>
+                <a href="https://www.instagram.com/m_alannurilkhan/" class="btn px-2 py-1 rounded-circle bg-danger btn-sosmed"><i class="fa-brands fa-instagram text-white icon-sosmed"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=malan31@std.unissula.ac.id" class="btn px-2 py-1 rounded-circle bg-dark btn-sosmed"><i class="fa-solid fa-envelope text-white icon-sosmed"></i></a>
+              </div>
               </div>
             </div>
             <div class="carousel-item">
@@ -156,7 +156,7 @@
               <div class="sosmed-container mt-0 pt-0">
                 <a href="#" class="btn px-2 py-1 rounded-circle bg-primary btn-sosmed"><i class="fa-brands fa-linkedin-in text-white icon-sosmed"></i></a>
                 <a href="#" class="btn px-2 py-1 rounded-circle bg-dark btn-sosmed"><i class="fa-brands fa-github text-white icon-sosmed"></i></a>
-                <a href="#" class="btn px-2 py-1 rounded-circle bg-danger btn-sosmed"><i class="fa-brands fa-instagram text-white icon-sosmed"></i></a>
+                <a href="https://www.instagram.com/dennyivanrifai" class="btn px-2 py-1 rounded-circle bg-danger btn-sosmed"><i class="fa-brands fa-instagram text-white icon-sosmed"></i></a>
                 <a href="#" class="btn px-2 py-1 rounded-circle bg-dark btn-sosmed"><i class="fa-solid fa-envelope text-white icon-sosmed"></i></a>
               </div>
             </div>
