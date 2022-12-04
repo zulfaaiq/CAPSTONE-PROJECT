@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('konten')
-<h3>Ubah Data Rumah Sakit Kota Tegal</h3>
+<h3>Ubah Data Rumah Sakit Umum Daerah Kota Tegal</h3>
   @foreach($rsud_kota_tegal as $s)
     <form method="post" action="{{route('updatersud_kota_tegal')}}">
       @csrf

@@ -1,9 +1,9 @@
 @extends('master')
 
 @section('konten')
-<h3>Ubah Data Rumah Sakit Umum Daerah Kabupaten Brebes</h3>
-  @foreach($rsud_kab_brebes as $s)
-    <form method="post" action="{{route('updatersud_kab_brebes')}}">
+<h3>Ubah Data Rumah Sakit Bhakti Asih Kabupaten Brebes</h3>
+  @foreach($rs_bhakti_asih as $s)
+    <form method="post" action="{{route('updaters_bhakti_asih')}}">
       @csrf
       <input type="hidden" name="id" value="{{$s->id}}">
       <div class="form-group">
