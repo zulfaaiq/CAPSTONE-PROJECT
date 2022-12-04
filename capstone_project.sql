@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2022 at 10:50 AM
+-- Generation Time: Dec 04, 2022 at 11:15 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -93,6 +93,90 @@ CREATE TABLE `personal_access_tokens` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `rsud_kab_brebes`
+--
+
+CREATE TABLE `rsud_kab_brebes` (
+  `id` int(10) NOT NULL,
+  `gol_darah` varchar(100) NOT NULL,
+  `jumlah` varchar(100) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `rsud_kab_brebes`
+--
+
+INSERT INTO `rsud_kab_brebes` (`id`, `gol_darah`, `jumlah`, `created_at`, `updated_at`) VALUES
+(1, 'B', '217', '2022-12-04 02:10:08', '2022-12-04 02:10:08');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `rsud_kab_tegal`
+--
+
+CREATE TABLE `rsud_kab_tegal` (
+  `id` int(10) NOT NULL,
+  `gol_darah` varchar(100) NOT NULL,
+  `jumlah` varchar(100) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `rsud_kab_tegal`
+--
+
+INSERT INTO `rsud_kab_tegal` (`id`, `gol_darah`, `jumlah`, `created_at`, `updated_at`) VALUES
+(1, 'A', '300', '2022-12-04 09:30:08', '2022-12-04 02:30:08');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `rsud_kota_tegal`
+--
+
+CREATE TABLE `rsud_kota_tegal` (
+  `id` int(10) NOT NULL,
+  `gol_darah` varchar(100) NOT NULL,
+  `jumlah` varchar(100) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `rsud_kota_tegal`
+--
+
+INSERT INTO `rsud_kota_tegal` (`id`, `gol_darah`, `jumlah`, `created_at`, `updated_at`) VALUES
+(1, 'AB', '70', '2022-12-04 02:10:46', '2022-12-04 02:10:46');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `rs_bhakti_asih`
+--
+
+CREATE TABLE `rs_bhakti_asih` (
+  `id` int(10) NOT NULL,
+  `gol_darah` varchar(100) NOT NULL,
+  `jumlah` varchar(100) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `rs_bhakti_asih`
+--
+
+INSERT INTO `rs_bhakti_asih` (`id`, `gol_darah`, `jumlah`, `created_at`, `updated_at`) VALUES
+(1, 'O', '109', '2022-12-04 02:11:24', '2022-12-04 02:11:24');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -107,6 +191,14 @@ CREATE TABLE `users` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `email`, `name`, `email_verified_at`, `password`, `remember_token`, `active`, `created_at`, `updated_at`) VALUES
+(3, 'malan31@std.unissula.ac.id', NULL, NULL, '$2y$10$KBnsDVBfiGaczkpI0OQa6u6Z8dhty7WTdcPdjpdPvLpwUcXdcVUJ6', NULL, 1, '2022-12-03 18:45:50', '2022-12-03 18:45:50'),
+(4, 'malnnurilkhan@gmail.com', NULL, NULL, '$2y$10$aBs.3hpjnJfjEiDTV3W1huxfPlaON5bVqo5IZFP3awGLQdvwk7mnK', NULL, 1, '2022-12-04 00:22:07', '2022-12-04 00:22:07');
 
 --
 -- Indexes for dumped tables
@@ -140,6 +232,30 @@ ALTER TABLE `personal_access_tokens`
   ADD KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`);
 
 --
+-- Indexes for table `rsud_kab_brebes`
+--
+ALTER TABLE `rsud_kab_brebes`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `rsud_kab_tegal`
+--
+ALTER TABLE `rsud_kab_tegal`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `rsud_kota_tegal`
+--
+ALTER TABLE `rsud_kota_tegal`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `rs_bhakti_asih`
+--
+ALTER TABLE `rs_bhakti_asih`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -169,10 +285,34 @@ ALTER TABLE `personal_access_tokens`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `rsud_kab_brebes`
+--
+ALTER TABLE `rsud_kab_brebes`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `rsud_kab_tegal`
+--
+ALTER TABLE `rsud_kab_tegal`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `rsud_kota_tegal`
+--
+ALTER TABLE `rsud_kota_tegal`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `rs_bhakti_asih`
+--
+ALTER TABLE `rs_bhakti_asih`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
