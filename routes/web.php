@@ -7,6 +7,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\RSUDKabBrebesController;
 use App\Http\Controllers\RSUDKotaTegalController;
 use App\Http\Controllers\RSBhaktiAsihController;
+use App\Http\Controllers\RSUDKabTegalController;
 
 
 /*
@@ -57,6 +58,16 @@ Route::get('rs_bhakti_asih/ubah/{id}', [RSBhaktiAsihController::class, 'ubahrs_b
 Route::post('rs_bhakti_asih/update', [RSBhaktiAsihController::class, 'updaters_bhakti_asih'])->name('updaters_bhakti_asih')->middleware('auth');
 
 Route::get('rs_bhakti_asih/hapus/{id}', [RSBhaktiAsihController::class, 'hapusrs_bhakti_asih'])->name('hapusrs_bhakti_asih')->middleware('auth');
+
+//RSUD Kabupaten Tegal
+Route::get('rsud_kab_tegal/tampil', [RSUDKabTegalController::class, 'tampilrsud_kab_tegal'])->name('tampilrsud_kab_tegal')->middleware('auth');
+Route::get('rsud_kab_tegal/tambah', [RSUDKabTegalController::class, 'tambahrsud_kab_tegal'])->name('tambahrsud_kab_tegal')->middleware('auth');
+Route::post('rsud_kab_tegal/simpan', [RSUDKabTegalController::class, 'simpanrsud_kab_tegal'])->name('simpanrsud_kab_tegal')->middleware('auth');
+
+Route::get('rsud_kab_tegal/ubah/{id}', [RSUDKabTegalController::class, 'ubahrsud_kab_tegal'])->name('ubahrsud_kab_tegal')->middleware('auth');
+Route::post('rsud_kab_tegal/update', [RSUDKabTegalController::class, 'updatersud_kab_tegal'])->name('updatersud_kab_tegal')->middleware('auth');
+
+Route::get('rsud_kab_tegal/hapus/{id}', [RSUDKabTegalController::class, 'hapusrsud_kab_tegal'])->name('hapusrsud_kab_tegal')->middleware('auth');
 
 //Register
 Route::get('/register', [RegisterController::class, 'register'])->name('register');
