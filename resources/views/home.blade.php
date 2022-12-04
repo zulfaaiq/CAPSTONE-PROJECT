@@ -16,7 +16,7 @@
           </a>
           </div>
           <div class="col-10 col-sm-5 col-md-5 col-lg-3">
-          <a href="#">
+          <a href="rsud_kota_tegal/tampil">
             <div class="card d-flex align-items-center pb-2 card-rs rounded-4">
               <img src="./image/rsud_tegal.jpg" class="rounded-circle card-rs__img" alt="profile image">
               <div class="card-body card-rs__content text-center">
