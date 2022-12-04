@@ -287,3 +287,28 @@ table tr:hover td{
   transition: all .2s;
   
 }
+
+.card-rs{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-width: 2px;
+  box-shadow: 0px 8px 24px rgb(0, 0, 0, 0.5);
+  background-color: rgba(240, 157, 171, 0.1);
+}
+
+.card-rs__content::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 70px;
+  height: 1px;
+}
+
+.card-rs__img {
+  width: 60%;
+  height: 60%;
+  top: 5px;
+  position: relative;
+  outline: 2px solid gray;
+}

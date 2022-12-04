@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\RSUDKabBrebesController;
 
 
 /*
@@ -22,6 +23,10 @@ Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actio
 
 Route::get('home', [HomeController::class, 'index'])->name('home')->middleware('auth');
 Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
+
+Route::get('rsud_kab_brebes/tampil', [RSUDKabBrebesController::class, 'tampilrsud_kab_brebes'])->name('tampilrsud_kab_brebes')->middleware('auth');
+Route::get('rsud_kab_brebes/tambah', [RSUDKabBrebesController::class, 'tambahrsud_kab_brebes'])->name('tambahrsud_kab_brebes')->middleware('auth');
+Route::post('rsud_kab_brebes/simpan', [RSUDKabBrebesController::class, 'simpanrsud_kab_brebes'])->name('simpanrsud_kab_brebes')->middleware('auth');
 
 Route::get('/register', [RegisterController::class, 'register'])->name('register');
 Route::post('register/action', [RegisterController::class, 'actionregister'])->name('actionregister');
