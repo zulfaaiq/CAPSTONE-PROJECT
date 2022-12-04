@@ -31,6 +31,8 @@ Route::post('rsud_kab_brebes/simpan', [RSUDKabBrebesController::class, 'simpanrs
 Route::get('rsud_kab_brebes/ubah/{id}', [RSUDKabBrebesController::class, 'ubahrsud_kab_brebes'])->name('ubahrsud_kab_brebes')->middleware('auth');
 Route::post('rsud_kab_brebes/update', [RSUDKabBrebesController::class, 'updatersud_kab_brebes'])->name('updatersud_kab_brebes')->middleware('auth');
 
+Route::get('rsud_kab_brebes/hapus/{id}', [RSUDKabBrebesController::class, 'hapusrsud_kab_brebes'])->name('hapusrsud_kab_brebes')->middleware('auth');
+
 Route::get('/register', [RegisterController::class, 'register'])->name('register');
 Route::post('register/action', [RegisterController::class, 'actionregister'])->name('actionregister');
 

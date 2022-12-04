@@ -48,4 +48,12 @@ class RSUDKabBrebesController extends Controller
 
     return redirect()->route('tampilrsud_kab_brebes');
     }
+
+    public function hapusrsud_kab_brebes($id)
+    {
+        $rsud_kab_brebes = RSUDKabBrebesModel::where('id', $id)
+                ->delete();
+
+        return redirect()->route('tampilrsud_kab_brebes');
+    }
 }
