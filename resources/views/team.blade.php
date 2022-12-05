@@ -110,7 +110,7 @@
             </div>
             <div class="carousel-item">
               <div class="card d-flex align-items-center pb-2 card-team rounded-4 mx-1">
-                <img src="./image/profile.jpg" class="rounded-circle card-team__img" alt="profile image">
+                <img src="./image/profile_faiqoh.jpg" class="rounded-circle card-team__img" alt="profile image">
                 <div class="card-body card-team__content text-center">
                   <h5 class="card-title">
                     Faiqotuzzulfa
@@ -120,10 +120,10 @@
                   </div>
                 </div>
                 <div class="sosmed-container mt-0 pt-0">
-                  <a href="#" class="btn px-2 py-1 rounded-circle bg-primary btn-sosmed"><i class="fa-brands fa-linkedin-in text-white icon-sosmed"></i></a>
-                  <a href="#" class="btn px-2 py-1 rounded-circle bg-dark btn-sosmed"><i class="fa-brands fa-github text-white icon-sosmed"></i></a>
-                  <a href="#" class="btn px-2 py-1 rounded-circle bg-danger btn-sosmed"><i class="fa-brands fa-instagram text-white icon-sosmed"></i></a>
-                  <a href="#" class="btn px-2 py-1 rounded-circle bg-dark btn-sosmed"><i class="fa-solid fa-envelope text-white icon-sosmed"></i></a>
+                  <a href=" https://www.linkedin.com/in/faiqotuzzulfa-86b871256/" class="btn px-2 py-1 rounded-circle bg-primary btn-sosmed"><i class="fa-brands fa-linkedin-in text-white icon-sosmed"></i></a>
+                  <a href="https://github.com/zulfaaiq" class="btn px-2 py-1 rounded-circle bg-dark btn-sosmed"><i class="fa-brands fa-github text-white icon-sosmed"></i></a>
+                  <a href="@zul.faaiq" class="btn px-2 py-1 rounded-circle bg-danger btn-sosmed"><i class="fa-brands fa-instagram text-white icon-sosmed"></i></a>
+                  <a href="faiqotuzzulfa05@students.unnes.ac.id" class="btn px-2 py-1 rounded-circle bg-dark btn-sosmed"><i class="fa-solid fa-envelope text-white icon-sosmed"></i></a>
                 </div>
               </div>
             </div>
@@ -201,7 +201,7 @@
           </div>
           <div class="col-12 col-sm-5 col-md-5 col-lg-3">
             <div class="card d-flex align-items-center pb-2 card-team rounded-4">
-              <img src="./image/profile.jpg" class="rounded-circle card-team__img" alt="profile image">
+              <img src="./image/profile_faiqoh.jpg" class="rounded-circle card-team__img" alt="profile image">
               <div class="card-body card-team__content text-center">
                 <h5 class="card-title">
                   Faiqotuzzulfa
