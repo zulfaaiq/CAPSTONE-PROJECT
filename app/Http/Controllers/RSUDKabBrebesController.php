@@ -14,6 +14,13 @@ class RSUDKabBrebesController extends Controller
         return view('tampilrsud_kab_brebes', ['rsud_kab_brebes' => $rsud_kab_brebes]);
     }
 
+    public function umum_tampilrsud_kab_brebes()
+    {
+        $rsud_kab_brebes = RSUDKabBrebesModel::select('*')
+             ->get();
+        return view('umum_tampilrsud_kab_brebes', ['rsud_kab_brebes' => $rsud_kab_brebes]);
+    }
+
     public function tambahrsud_kab_brebes()
     {
         return view('tambahrsud_kab_brebes');

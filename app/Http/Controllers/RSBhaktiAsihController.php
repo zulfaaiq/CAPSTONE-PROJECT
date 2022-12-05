@@ -14,6 +14,13 @@ class RSBhaktiAsihController extends Controller
         return view('tampilrs_bhakti_asih', ['rs_bhakti_asih' => $rs_bhakti_asih]);
     }
 
+    public function umum_tampilrs_bhakti_asih()
+    {
+        $rs_bhakti_asih = RSBhaktiAsihModel::select('*')
+             ->get();
+        return view('umum_tampilrs_bhakti_asih', ['rs_bhakti_asih' => $rs_bhakti_asih]);
+    }
+
     public function tambahrs_bhakti_asih()
     {
         return view('tambahrs_bhakti_asih');

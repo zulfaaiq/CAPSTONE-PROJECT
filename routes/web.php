@@ -78,7 +78,7 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('index');
+    return view('umum_home');
 });
 
 Route::get('/about', function () {
@@ -88,3 +88,9 @@ Route::get('/about', function () {
 Route::get('/team', function () {
     return view('team');
 });
+
+
+Route::get('umum_tampilrsud_kab_brebes', [RSUDKabBrebesController::class, 'umum_tampilrsud_kab_brebes'])->name('tampilrsud_kab_brebes')->middleware('guest');
+Route::get('umum_tampilrsud_kota_tegal', [RSUDKotaTegalController::class, 'umum_tampilrsud_kota_tegal'])->name('tampilrsud_kota_tegal')->middleware('guest');
+Route::get('umum_tampilrs_bhakti_asih', [RSBhaktiAsihController::class, 'umum_tampilrs_bhakti_asih'])->name('tampilrs_bhakti_asih')->middleware('guest');
+Route::get('umum_tampilrsud_kab_tegal', [RSUDKabTegalController::class, 'umum_tampilrsud_kab_tegal'])->name('tampilrsud_kab_tegal')->middleware('guest');

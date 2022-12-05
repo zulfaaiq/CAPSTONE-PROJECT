@@ -14,6 +14,13 @@ class RSUDKabTegalController extends Controller
         return view('tampilrsud_kab_tegal', ['rsud_kab_tegal' => $rsud_kab_tegal]);
     }
 
+    public function umum_tampilrsud_kab_tegal()
+    {
+        $rsud_kab_tegal = RSUDKabTegalModel::select('*')
+             ->get();
+        return view('umum_tampilrsud_kab_tegal', ['rsud_kab_tegal' => $rsud_kab_tegal]);
+    }
+
     public function tambahrsud_kab_tegal()
     {
         return view('tambahrsud_kab_tegal');

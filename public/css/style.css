@@ -312,3 +312,9 @@ table tr:hover td{
   position: relative;
   outline: 2px solid gray;
 }
+
+.title_umum {
+  text-align: center;
+  height: 60px;
+  padding-top: 20px;
+}
