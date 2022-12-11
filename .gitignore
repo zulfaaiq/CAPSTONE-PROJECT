@@ -1,3 +1,4 @@
+
 /node_modules
 /public/build
 /public/hot
@@ -16,3 +17,22 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+### Laravel ###
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+storage/*.key
+Homestead.yaml
+Homestead.json
+/.vagrant
+.phpunit.result.cache
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+

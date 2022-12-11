@@ -32,6 +32,7 @@
   
   nav ul {
     display: flex;
+    margin: 0;
   }
   
   nav .logo {
@@ -149,3 +150,171 @@
     transform: rotate(-6deg);
   }
   
+  /* Team */
+
+.team {
+  background-color: white;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin: 20px 0 40px 0;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background: #d70000;
+    transform: translateX(-50%);
+}
+
+.btn-sosmed {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-sosmed:hover .icon-sosmed{
+    animation: rotation 0.5s 1 linear;
+}
+
+.card-team__img {
+    width: 31%;
+    height: 31%;
+    position: relative;
+    top: -60px;
+    outline: 2px solid gray;
+}
+
+.card-team{
+    margin-top: 60px;
+    border-width: 2px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5);
+    background-color: rgba(240, 157, 171, 0.1);
+}
+
+.card-team__content::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 70px;
+    height: 1px;
+    background: #000;
+    transform: translateX(-50%);
+}
+
+.card-team__content {
+    position: relative;
+    top: -30px;
+}
+
+.sosmed-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5px;
+    top: -25px;
+    position: relative;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #cac8c8;
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+    top: 50%;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+  
+/*About*/
+
+.logoo{
+  width: 120px;
+  height: 120;
+  display: block;
+}
+.one-title{
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 40px;
+  font-family:arial;
+}
+.paraf{
+  font-size:20px ;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-indent: 40px;
+  font-family: Arial;
+  text-align: justify;
+}
+table{
+  border-collapse: collapse;
+  position: relative;
+  margin: auto;
+  color: rgb(0, 0, 0);
+}
+table td{
+  border: 1px solid;
+  padding: 20px 100px;
+}
+table tr:hover td{
+  background-color: rgb(244, 167, 167);
+  border-color: rgb(0, 0, 0);
+  transition: all .2s;
+  
+}
+
+.card-rs{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-width: 2px;
+  box-shadow: 0px 8px 24px rgb(0, 0, 0, 0.5);
+  background-color: rgba(240, 157, 171, 0.1);
+}
+
+.card-rs__content::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 70px;
+  height: 1px;
+}
+
+.card-rs__img {
+  width: 60%;
+  height: 60%;
+  top: 5px;
+  position: relative;
+  outline: 2px solid gray;
+}
+
+.title_umum {
+  text-align: center;
+  height: 60px;
+  padding-top: 20px;
+}
