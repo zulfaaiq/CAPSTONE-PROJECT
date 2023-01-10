@@ -24,6 +24,8 @@ use App\Http\Controllers\RSUDKabTegalController;
 //Login
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
+Route::get('auth/google', [App\Http\Controllers\GoogleController::class, 'redirectToGoogle'])->name('google.login');
+Route::get('auth/google/callback', [App\Http\Controllers\GoogleController::class, 'handleGoogleCallback'])->name('google.callback');
 
 //Home
 Route::get('home', [HomeController::class, 'index'])->name('home')->middleware('auth');
